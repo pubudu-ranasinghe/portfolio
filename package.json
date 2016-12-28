@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pubudu-ranasinghe/portfolio/issues"
   },
-  "homepage": "https://github.com/pubudu-ranasinghe/portfolio#readme"
+  "homepage": "https://github.com/pubudu-ranasinghe/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
