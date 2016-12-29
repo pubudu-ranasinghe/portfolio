@@ -1,5 +1,93 @@
 @import "normalize";
-  
+
+// media query breakpoints
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+// color palette
+$teal: #6FE7DD;
+$purple: #521262;
+$red: #FF2E63;
+$black: #252A34;
+$dark-gray: #95989A;
+
 body {
-  background-color: #FEFEFE;
+  font-family: 'Rubik', sans-serif;
+}
+
+// remove heading top margins
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+// remove paragraph margins
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $screen-sm) { width: 540px; max-width: 100%; }
+  @media (min-width: $screen-md) { width: 720px; max-width: 100%; }
+  @media (min-width: $screen-lg) { width: 960px; max-width: 100%; }
+  @media (min-width: $screen-xl) { width: 1140px; max-width: 100%; }
+}
+
+.navbar {
+  padding: 10px 20px;
+  position: relative;
+  height: 2rem;
+
+  @media(max-width: $screen-sm) { height: 3.6rem; text-align: center; }
+
+  .brand {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    display: inline-block;
+    text-decoration: none;
+    color: $black;
+    font-weight: 500;
+  }
+
+  .navigation {
+    float: right;
+    @media(max-width: $screen-sm) { float: none; }
+
+    .nav-link {
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      margin-right: 0.7rem;
+      margin-left: 0.7rem;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      color: $dark-gray;
+    }
+
+    .active { color: $black; }
+  }
+}
+
+.intro {
+  height: 90vh;
+  background-color: $teal;
+
+  .hero-text {
+    font-size: 45px;
+    font-weight: 400;
+    color: $purple;
+    padding-top: 35vh;
+
+    span { color: $red; }
+    @media (max-width: $screen-md) { font-size: 36px; }
+  }
 }
