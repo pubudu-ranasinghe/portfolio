@@ -8,17 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pubudu-ranasinghe/portfolio.git"
+    "url": "git+https://github.com/pubudu-ranasinghe/pubudu-ranasinghe.github.io.git"
   },
   "author": "Pubudu Ranasinghe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pubudu-ranasinghe/portfolio/issues"
+    "url": "https://github.com/pubudu-ranasinghe/pubudu-ranasinghe.github.io/issues"
   },
-  "homepage": "https://github.com/pubudu-ranasinghe/portfolio#readme",
+  "homepage": "https://github.com/pubudu-ranasinghe/pubudu-ranasinghe.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.0.0"
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.0.0",
+    "run-sequence": "^1.2.2"
   }
 }

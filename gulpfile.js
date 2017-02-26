@@ -2,6 +2,9 @@
  
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var runSequence = require('run-sequence');
+var del = require('del');
+var cssnano = require('gulp-cssnano')
 var browserSync = require('browser-sync').create();
 
 // sass compiling with browsersync stream 
@@ -24,6 +27,33 @@ gulp.task('serve', ['sass'], function() {
   });
   gulp.watch('./sass/**/*.scss', ['sass']);
   gulp.watch('./*.html').on('change', browserSync.reload);
+});
+
+// clean dist directory
+gulp.task('clean', function () {
+  return del('dist/*');
+});
+
+// compile sass, minify and copy to dist/css
+gulp.task('styles', ['sass'], function() {
+  return gulp.src('css/*.css')
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist/css'));
+});
+
+// copy html files to dist
+gulp.task('copy', function() {
+  return gulp.src('*.html')
+    .pipe(gulp.dest('dist'));
+});
+
+// build production
+gulp.task('build', ['clean'], function (cb) {
+  runSequence(
+    'styles',
+    'copy',
+    cb
+  );
 });
 
 // default action to serve
