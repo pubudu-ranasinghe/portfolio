@@ -9,6 +9,7 @@ A somewhat over-engineered static website ✌️
 * [x] Add Favicon
 * [x] Social Links
 * [x] Add work
-* [ ] Image optimize gulp task
+* [x] Image optimize gulp task
 * [ ] Redo Contact
 * [ ] Fix Navigation
+* [ ] Use newer gulp plugin

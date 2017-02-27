@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var runSequence = require('run-sequence');
 var del = require('del');
 var cssnano = require('gulp-cssnano')
+var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 
 // sass compiling with browsersync stream 
@@ -44,6 +45,10 @@ gulp.task('styles', ['sass'], function() {
 // copy img folder to dist TODO: optimize
 gulp.task('images', function() {
   return gulp.src(['img/*.*'])
+    .pipe(imagemin({
+      progressive: true,
+      interlaced: true
+    }))
     .pipe(gulp.dest('dist/img'));
 });
 
