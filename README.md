@@ -6,6 +6,7 @@ A somewhat over-engineered static website ✌️
 
 * [x] Firebase Hosting
 * [x] Connect Domain
+* [x] Add Favicon
 * [ ] Social Links
 * [ ] Add work
 * [ ] Image optimize gulp task

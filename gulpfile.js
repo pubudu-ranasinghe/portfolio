@@ -43,7 +43,7 @@ gulp.task('styles', ['sass'], function() {
 
 // copy html files to dist
 gulp.task('copy', function() {
-  return gulp.src('*.html')
+  return gulp.src(['*.html', 'favicon.ico'])
     .pipe(gulp.dest('dist'));
 });
 
