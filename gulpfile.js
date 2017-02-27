@@ -41,6 +41,12 @@ gulp.task('styles', ['sass'], function() {
     .pipe(gulp.dest('dist/css'));
 });
 
+// copy img folder to dist TODO: optimize
+gulp.task('images', function() {
+  return gulp.src(['img/*.*'])
+    .pipe(gulp.dest('dist/img'));
+});
+
 // copy html files to dist
 gulp.task('copy', function() {
   return gulp.src(['*.html', 'favicon.ico'])
@@ -51,6 +57,7 @@ gulp.task('copy', function() {
 gulp.task('build', ['clean'], function (cb) {
   runSequence(
     'styles',
+    'images',
     'copy',
     cb
   );

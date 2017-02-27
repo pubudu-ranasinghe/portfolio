@@ -8,7 +8,7 @@ A somewhat over-engineered static website ✌️
 * [x] Connect Domain
 * [x] Add Favicon
 * [x] Social Links
-* [ ] Add work
+* [x] Add work
 * [ ] Image optimize gulp task
 * [ ] Redo Contact
 * [ ] Fix Navigation
