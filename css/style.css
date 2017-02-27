@@ -469,9 +469,6 @@ h6 {
   padding: 30px 0;
   position: relative;
   font-family: 'Work Sans', sans-serif; }
-  @media (max-width: 576px) {
-    .navbar {
-      text-align: center; } }
   .navbar .brand {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
@@ -480,9 +477,6 @@ h6 {
     color: #FF2E63; }
   .navbar .navigation {
     float: right; }
-    @media (max-width: 576px) {
-      .navbar .navigation {
-        float: none; } }
     .navbar .navigation .nav-link {
       padding-top: 0.4rem;
       padding-bottom: 0.4rem;
@@ -511,15 +505,18 @@ h6 {
     letter-spacing: 0.5px;
     padding-top: 6rem;
     margin-bottom: 0.7em; }
+    @media (max-width: 992px) {
+      .intro .hero-text {
+        font-size: 2em;
+        padding-top: 5em; } }
     @media (max-width: 768px) {
       .intro .hero-text {
-        font-size: 36px;
-        padding-top: 14rem; } }
+        font-size: 1.6em;
+        padding-top: 5em; } }
     @media (max-width: 576px) {
       .intro .hero-text {
-        font-size: 32px;
-        padding-top: 12rem;
-        text-align: center; } }
+        font-size: 1.3em;
+        padding-top: 4em; } }
   .intro .icon {
     fill: #EAEAEA;
     transition: fill 0.5s ease-out; }
@@ -576,17 +573,19 @@ h6 {
   padding-bottom: 80px; }
   .contact .title {
     padding-top: 80px;
-    color: #521262; }
+    color: #521262;
+    font-weight: 400; }
   .contact .inner {
     padding-left: 15px; }
   .contact .mailto {
+    font-family: 'Rubik', sans-serif;
     padding-top: 30px;
     display: inline-block;
     font-size: 64px;
     font-weight: 500;
     color: #FFF;
     text-decoration: none;
-    border-bottom: 10px solid #FFDE7D;
+    border-bottom: 8px solid #FFDE7D;
     transition: border-bottom .3s ease-out; }
     .contact .mailto:hover, .contact .mailto:focus, .contact .mailto:active {
       border-bottom-color: #FFF; }

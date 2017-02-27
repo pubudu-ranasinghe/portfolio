@@ -69,7 +69,7 @@ h6 { font-size: 1em ;}
   position: relative;
     font-family: 'Work Sans', sans-serif;
 
-  @media(max-width: $screen-sm) { text-align: center; }
+  // @media(max-width: $screen-sm) { text-align: center; }
 
   .brand {
     padding-top: 0.4rem;
@@ -81,7 +81,7 @@ h6 { font-size: 1em ;}
 
   .navigation {
     float: right;
-    @media(max-width: $screen-sm) { float: none; }
+    // @media(max-width: $screen-sm) { float: none; }
 
     .nav-link {
       padding-top: 0.4rem;
@@ -122,8 +122,9 @@ h6 { font-size: 1em ;}
     padding-top: 6rem;
     margin-bottom: 0.7em;
     // span { color: $red; }
-    @media (max-width: $screen-md) { font-size: 36px; padding-top: 14rem; }
-    @media (max-width: $screen-sm) { font-size: 32px; padding-top: 12rem; text-align: center; }
+    @media (max-width: $screen-lg) { font-size: 2em; padding-top: 5em; }
+    @media (max-width: $screen-md) { font-size: 1.6em; padding-top: 5em; }
+    @media (max-width: $screen-sm) { font-size: 1.3em; padding-top: 4em; }
   }
 
   .icon {
@@ -186,18 +187,20 @@ h6 { font-size: 1em ;}
   .title {
     padding-top: 80px;
     color: $purple;
+    font-weight: 400;
   }
 
   .inner { padding-left: 15px; }
 
   .mailto {
+    font-family: 'Rubik', sans-serif;
     padding-top: 30px;
     display: inline-block;
     font-size: 64px;
     font-weight: 500;
     color: #FFF;
     text-decoration: none;
-    border-bottom: 10px solid $yellow;
+    border-bottom: 8px solid $yellow;
     transition: border-bottom .3s ease-out;
 
     &:hover, &:focus, &:active {
