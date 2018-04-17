@@ -1,6 +1,6 @@
 ## portfolio
 
-A somewhat over-engineered static website ✌️
+A static website ✌️
 
 #### TODO
 
@@ -13,3 +13,4 @@ A somewhat over-engineered static website ✌️
 * [ ] Redo Contact
 * [ ] Fix Navigation
 * [ ] Use newer gulp plugin
+* [ ] Move to npm scripts
